@@ -1,0 +1,15 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. S2589-FP-LOW-VALUE.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 VAR-INITIALIZED-TO-BINARY-ZERO PIC 9(01).
+       PROCEDURE DIVISION.
+           IF
+               VAR-INITIALIZED-TO-BINARY-ZERO NUMERIC AND
+               VAR-INITIALIZED-TO-BINARY-ZERO = 3
+               DISPLAY "TRUE"
+           ELSE
+               DISPLAY "FALSE"
+           END-IF
+           .
+           STOP RUN.
