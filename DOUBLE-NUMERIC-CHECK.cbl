@@ -1,0 +1,13 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DOUBLE-NUMERIC-CHECK.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 MY-VAR PIC 9(01).
+       PROCEDURE DIVISION.
+           IF MY-VAR NUMERIC AND NOT MY-VAR IS NOT NUMERIC
+               DISPLAY "TRUE"
+           ELSE
+               DISPLAY "FALSE"
+           END-IF
+           .
+           STOP RUN.
